@@ -27,19 +27,6 @@ jobs:
       - name: Install PHP dependencies
         run: composer install --no-interaction --prefer-dist --no-dev --optimize-autoloader
 
-      - name: Setup Node
-        if: hashFiles('package-lock.json') != ''
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: npm
-
-      - name: Build frontend assets
-        if: hashFiles('package-lock.json') != ''
-        run: |
-          npm install
-          npm run build
-
       - name: Prepare cPanel deploy bundle
         run: |
           chmod +x scripts/prepare-cpanel-deploy.sh
