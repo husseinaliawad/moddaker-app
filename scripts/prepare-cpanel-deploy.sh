@@ -20,10 +20,6 @@ if command -v rsync >/dev/null 2>&1; then
     --exclude 'deploy-dist.tmp/' \
     --exclude 'deploy-dist.old/' \
     --exclude '.env' \
-    --exclude 'storage/logs/' \
-    --exclude 'storage/framework/cache/' \
-    --exclude 'storage/framework/sessions/' \
-    --exclude 'storage/framework/views/' \
     --exclude '.ftp-deploy-sync-state.json' \
     "${ROOT_DIR}/" "${WORK_DIR}/"
 else
@@ -36,10 +32,6 @@ else
     --exclude='deploy-dist.tmp' \
     --exclude='deploy-dist.old' \
     --exclude='.env' \
-    --exclude='storage/logs' \
-    --exclude='storage/framework/cache' \
-    --exclude='storage/framework/sessions' \
-    --exclude='storage/framework/views' \
     --exclude='.ftp-deploy-sync-state.json' \
     -C "${ROOT_DIR}" -cf - . | tar -C "${WORK_DIR}" -xf -
 fi
@@ -64,6 +56,27 @@ fi
 sed -i "s#__DIR__.'/../vendor/autoload.php'#__DIR__.'/vendor/autoload.php'#g" "${WORK_DIR}/index.php"
 sed -i "s#__DIR__.'/../bootstrap/app.php'#__DIR__.'/bootstrap/app.php'#g" "${WORK_DIR}/index.php"
 sed -i "s#__DIR__.'/../storage/framework/maintenance.php'#__DIR__.'/storage/framework/maintenance.php'#g" "${WORK_DIR}/index.php"
+
+# Recreate runtime directories cleanly for production deploy.
+rm -rf \
+  "${WORK_DIR}/storage/logs" \
+  "${WORK_DIR}/storage/framework/cache" \
+  "${WORK_DIR}/storage/framework/sessions" \
+  "${WORK_DIR}/storage/framework/views"
+
+mkdir -p \
+  "${WORK_DIR}/storage/logs" \
+  "${WORK_DIR}/storage/framework/cache/data" \
+  "${WORK_DIR}/storage/framework/sessions" \
+  "${WORK_DIR}/storage/framework/views" \
+  "${WORK_DIR}/bootstrap/cache"
+
+touch \
+  "${WORK_DIR}/storage/logs/.gitignore" \
+  "${WORK_DIR}/storage/framework/cache/.gitignore" \
+  "${WORK_DIR}/storage/framework/cache/data/.gitignore" \
+  "${WORK_DIR}/storage/framework/sessions/.gitignore" \
+  "${WORK_DIR}/storage/framework/views/.gitignore"
 
 # Protect production environment file.
 rm -f "${WORK_DIR}/.env"
