@@ -65,7 +65,7 @@ jobs:
           port: 21
           local-dir: ./deploy-dist/
           server-dir: /public_html/
-          dangerous-clean-slate: ${{ github.event.inputs.clean_slate == 'true' }}
+          dangerous-clean-slate: ${{ github.event.inputs.clean_slate == 'true' || contains(github.event.head_commit.message || '', '[clean-slate]') }}
           exclude: |
             **/.git*
             **/.git*/**
