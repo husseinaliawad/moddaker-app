@@ -5,6 +5,15 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      clean_slate:
+        description: "Delete remote files before upload (use true once to repair broken deploys)"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
 
 concurrency:
   group: ftp-deploy-production
@@ -27,6 +36,20 @@ jobs:
       - name: Install PHP dependencies
         run: composer install --no-interaction --prefer-dist --no-dev --optimize-autoloader
 
+      - name: Verify production autoload has no dev mappings
+        run: |
+          if grep -Fq "'Faker\\\\'" vendor/composer/autoload_psr4.php \
+            || grep -Fq "'Tests\\\\'" vendor/composer/autoload_psr4.php \
+            || grep -Fq "'Whoops\\\\'" vendor/composer/autoload_psr4.php \
+            || grep -Fq "'Laravel\\\\Sail\\\\'" vendor/composer/autoload_psr4.php \
+            || grep -Fq "'Laravel\\\\Pail\\\\'" vendor/composer/autoload_psr4.php \
+            || grep -Fq "'Laravel\\\\Breeze\\\\'" vendor/composer/autoload_psr4.php \
+            || grep -Fq "'Mockery\\\\'" vendor/composer/autoload_psr4.php \
+            || grep -Fq "'Spatie\\\\Permission\\\\'" vendor/composer/autoload_psr4.php; then
+            echo "Dev namespaces detected in production autoload. Aborting deploy."
+            exit 1
+          fi
+
       - name: Prepare cPanel deploy bundle
         run: |
           chmod +x scripts/prepare-cpanel-deploy.sh
@@ -42,7 +65,7 @@ jobs:
           port: 21
           local-dir: ./deploy-dist/
           server-dir: /public_html/
-          dangerous-clean-slate: false
+          dangerous-clean-slate: ${{ github.event.inputs.clean_slate == 'true' }}
           exclude: |
             **/.git*
             **/.git*/**
@@ -51,4 +74,3 @@ jobs:
             **/tests/**
             **/storage/logs/*.log
             **/.env
-            **/.ftp-deploy-sync-state.json
