@@ -14,6 +14,7 @@
 /.qodo
 /.zencoder
 /.zenflow
+/.ftp-deploy-sync-state.json
 /auth.json
 /node_modules
 /public/build
