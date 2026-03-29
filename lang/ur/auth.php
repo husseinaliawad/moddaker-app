@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'login' => 'لاگ ان',
+    'logout' => 'لاگ آؤٹ',
+    'register' => 'رجسٹر کریں',
+    'password' => 'پاس ورڈ',
+    'confirm_password' => 'پاس ورڈ کی تصدیق',
+    'email' => 'ای میل',
+    'remember_me' => 'مجھے یاد رکھیں',
+    'forgot_password' => 'کیا آپ پاس ورڈ بھول گئے؟',
+    'login_subtitle' => 'قرآن سیکھنے کے سفر کو جاری رکھنے کے لیے لاگ اِن کریں',
+    'login_hook_title' => 'فہمِ قرآن کے سفر کا آغاز کریں',
+    'login_hook_description' => 'اپنے کورسز دیکھیں، پیش رفت ٹریک کریں، اور واضح مرحلوں کے ساتھ سیکھنا جاری رکھیں۔',
+    'login_hook_point_courses' => 'منظم کورسز اور اسباق ایک جگہ',
+    'login_hook_point_progress' => 'سبق بہ سبق اپنی پیش رفت دیکھیں',
+    'login_hook_point_certificate' => 'کورس مکمل ہونے پر سرٹیفکیٹ حاصل کریں',
+    'register_subtitle' => 'اپنا اکاؤنٹ بنائیں اور آج ہی سیکھنا شروع کریں۔',
+    'register_hook_title' => 'فہمِ قرآن کے سفر کا آغاز کریں',
+    'register_hook_description' => 'چند منٹ میں رجسٹر کریں، کورسز تک رسائی حاصل کریں، پیش رفت ٹریک کریں اور سرٹیفکیٹ پائیں۔',
+    'register_hook_point_courses' => 'سادہ اور منظم انداز میں سیکھیں',
+    'register_hook_point_progress' => 'اپنی پیش رفت قدم بہ قدم دیکھیں',
+    'register_hook_point_certificate' => 'تکمیل پر سرٹیفکیٹ حاصل کریں',
+    'register_terms_notice' => 'اکاؤنٹ بنانے سے آپ شرائط اور پرائیویسی پالیسی سے متفق ہوتے ہیں۔',
+    'already_registered' => 'کیا آپ کے پاس پہلے سے اکاؤنٹ ہے؟',
+];

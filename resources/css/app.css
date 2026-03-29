@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --bg: #faf8f4;
+        --fg: #1a1a1a;
+        --accent: #c9a227;
+        --accent-soft: #d4b84a;
+        --card: #ffffff;
+        --border: #e7e0d4;
+        --primary: #0a4d40;
+        --primary-light: #0d6555;
+        --sidebar-top: #17131b;
+        --sidebar-bottom: #261d2d;
+        --success: #28a36a;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    [x-cloak] {
+        display: none !important;
+    }
+
+    body {
+        @apply font-body bg-cream text-charcoal antialiased;
+        overflow-x: hidden;
+    }
+
+    ::selection {
+        background: rgba(10, 77, 64, 0.16);
+    }
+}
+
+@layer components {
+
+    /* Buttons */
+    .btn-primary {
+        @apply rounded-2xl px-6 py-3 font-semibold text-white transition-all duration-300;
+        background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+        box-shadow: 0 14px 34px rgba(10, 77, 64, 0.22);
+    }
+
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 18px 40px rgba(10, 77, 64, 0.3);
+    }
+
+    .btn-secondary {
+        @apply rounded-2xl border-2 border-accent px-6 py-3 font-semibold text-accent transition-all duration-300;
+        background: rgba(255, 255, 255, 0.85);
+    }
+
+    .btn-secondary:hover {
+        @apply bg-accent text-white;
+    }
+
+    /* Layout */
+    .admin-shell {
+        background:
+            radial-gradient(circle at top right, rgba(10, 77, 64, 0.12), transparent 26%),
+            radial-gradient(circle at 10% 20%, rgba(201, 162, 39, 0.11), transparent 18%),
+            linear-gradient(180deg, #fbfaf6 0%, #f5efe5 100%);
+    }
+
+    .admin-sidebar {
+        background:
+            radial-gradient(circle at top right, rgba(201, 162, 39, 0.14), transparent 24%),
+            linear-gradient(180deg, rgba(23, 19, 27, 0.98) 0%, rgba(38, 29, 45, 0.98) 100%);
+        box-shadow: 0 24px 60px rgba(11, 10, 14, 0.28);
+    }
+
+    /* Cards */
+    .admin-brand-card {
+        @apply rounded-[28px] border border-white/10 p-5;
+        background: rgba(255,255,255,0.06);
+        box-shadow: 0 16px 40px rgba(0,0,0,0.18);
+    }
+
+    .admin-profile-card {
+        @apply flex items-center gap-3 rounded-2xl border border-white/10 p-4;
+        background: rgba(255,255,255,0.05);
+    }
+
+    .admin-avatar {
+        @apply flex h-12 w-12 items-center justify-center rounded-2xl text-sm font-bold uppercase;
+        background: linear-gradient(135deg, #fff 0%, #efe7dc 100%);
+        color: var(--primary);
+    }
+
+    /* Chips */
+    .admin-chip {
+        @apply inline-flex items-center rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em];
+    }
+
+    .admin-chip-dark {
+        @apply border border-white/10 text-white/70;
+        background: rgba(255,255,255,0.08);
+    }
+
+    .admin-chip-accent {
+        @apply text-white;
+        background: linear-gradient(135deg, var(--accent) 0%, var(--accent-soft) 100%);
+    }
+
+    /* Sidebar */
+    .admin-sidebar-link {
+        @apply relative flex items-center gap-3 rounded-2xl px-3.5 py-3 text-sm font-medium transition-all duration-200;
+        color: rgba(255,255,255,0.7);
+    }
+
+    .admin-sidebar-link:hover {
+        color: white;
+        background: rgba(255,255,255,0.07);
+        transform: translateX(-2px);
+    }
+
+    .admin-sidebar-link.is-active {
+        color: white;
+        background: rgba(255,255,255,0.12);
+        border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .admin-sidebar-link.is-active::before {
+        content: '';
+        position: absolute;
+        inset-inline-start: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 24px;
+        border-radius: 999px;
+        background: linear-gradient(180deg, var(--accent) 0%, var(--accent-soft) 100%);
+    }
+
+    .admin-sidebar-link__icon {
+        @apply flex h-9 w-9 items-center justify-center rounded-xl;
+        background: rgba(255,255,255,0.05);
+    }
+
+    .admin-badge {
+        @apply rounded-full px-2.5 py-1 text-[11px] font-bold text-white;
+        background: linear-gradient(135deg, var(--accent) 0%, var(--accent-soft) 100%);
+    }
+
+    /* Quick actions */
+    .admin-quick-card {
+        @apply rounded-[26px] border border-white/10 p-4;
+        background: rgba(255,255,255,0.05);
+    }
+
+    .admin-quick-link {
+        @apply rounded-2xl border border-white/10 px-4 py-3 text-sm text-white/80 transition;
+        background: rgba(255,255,255,0.04);
+    }
+
+    .admin-quick-link:hover {
+        @apply text-white;
+        background: rgba(255,255,255,0.09);
+    }
+
+    .card-surface {
+        @apply rounded-2xl border border-border/80 bg-white/85 shadow-[0_12px_32px_rgba(26,26,26,0.06)] backdrop-blur-sm;
+    }
+
+    /* Topbar */
+    .admin-topbar {
+        border-bottom: 1px solid rgba(26, 26, 26, 0.05);
+        background: rgba(255,255,255,0.7);
+        backdrop-filter: blur(14px);
+    }
+
+    .admin-topbar-search {
+        @apply h-12 w-full rounded-2xl border px-4 ps-11 text-sm text-charcoal shadow-sm transition;
+        border-color: rgba(231, 224, 212, 0.9);
+        background: rgba(255,255,255,0.9);
+    }
+
+    .admin-topbar-search:focus {
+        outline: none;
+        border-color: rgba(10, 77, 64, 0.3);
+        box-shadow: 0 0 0 4px rgba(10, 77, 64, 0.08);
+    }
+
+    /* Buttons */
+    .admin-icon-btn {
+        @apply flex h-12 w-12 items-center justify-center rounded-2xl transition;
+    }
+
+    .admin-icon-btn-light {
+        @apply border border-border bg-white text-charcoal shadow-sm;
+    }
+
+    .admin-icon-btn-dark {
+        @apply border border-white/10 bg-white/10 text-white;
+    }
+
+    .admin-soft-btn-light {
+        @apply rounded-2xl border border-border bg-white px-4 py-3 text-sm font-medium text-charcoal shadow-sm;
+    }
+
+    .admin-soft-btn-dark {
+        @apply rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white;
+    }
+
+    .admin-user-trigger {
+        @apply flex items-center gap-3 rounded-2xl border border-border bg-white px-3 py-2 shadow-sm;
+    }
+
+    .admin-user-trigger__avatar {
+        @apply flex h-11 w-11 items-center justify-center rounded-2xl text-sm font-bold uppercase text-white;
+        background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    }
+
+    .admin-notification-dot {
+        @apply absolute -top-1 -end-1 flex h-6 min-w-6 items-center justify-center rounded-full px-1 text-[11px] font-bold text-white;
+        background: var(--accent);
+    }
+
+    .hero-pattern-bg {
+        background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230a4d40' fill-opacity='0.04'%3E%3Cpath d='M40 0l40 40-40 40L0 40 40 0zm0 10L10 40l30 30 30-30-30-30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .hero-ornament {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 1px solid rgba(201, 162, 39, 0.28);
+        border-radius: 9999px;
+    }
+
+    .hero-btn-primary {
+        background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+        transition: all 0.3s ease;
+    }
+
+    .hero-btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 30px rgba(10, 77, 64, 0.3);
+    }
+
+    .hero-btn-secondary {
+        border: 2px solid var(--accent);
+        color: var(--accent);
+        transition: all 0.3s ease;
+    }
+
+    .hero-btn-secondary:hover {
+        background: var(--accent);
+        color: #fff;
+    }
+
+    .hero-progress {
+        background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+    }
+}
+
+@layer utilities {
+    .font-display {
+        font-family: 'Amiri', serif;
+    }
+
+    @keyframes hero-float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .hero-float {
+        animation: hero-float 6s ease-in-out infinite;
+    }
+}

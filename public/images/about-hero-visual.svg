@@ -1,0 +1,58 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="60" y1="40" x2="1120" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7A5C87"/>
+      <stop offset="1" stop-color="#4F3855"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="180" y1="210" x2="900" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.06"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(930 210) rotate(130) scale(360 300)">
+      <stop stop-color="#E8C1AF" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#E8C1AF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(260 740) rotate(30) scale(340 280)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#FFFFFF" fill-opacity="0.18"/>
+    </pattern>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="900" rx="42" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="900" rx="42" fill="url(#dots)"/>
+  <rect x="0" y="0" width="1200" height="900" rx="42" fill="url(#glowA)"/>
+  <rect x="0" y="0" width="1200" height="900" rx="42" fill="url(#glowB)"/>
+
+  <g opacity="0.95">
+    <rect x="130" y="110" width="940" height="650" rx="34" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity="0.25"/>
+    <rect x="165" y="150" width="600" height="330" rx="28" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.2"/>
+    <rect x="165" y="515" width="870" height="210" rx="26" fill="#000000" fill-opacity="0.2" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  </g>
+
+  <g fill="#FFFFFF" fill-opacity="0.85">
+    <circle cx="215" cy="207" r="4"/>
+    <circle cx="240" cy="207" r="4"/>
+    <circle cx="265" cy="207" r="4"/>
+  </g>
+
+  <g>
+    <rect x="195" y="548" width="370" height="14" rx="7" fill="#FFFFFF" fill-opacity="0.38"/>
+    <rect x="195" y="573" width="610" height="14" rx="7" fill="#FFFFFF" fill-opacity="0.24"/>
+    <rect x="195" y="598" width="520" height="14" rx="7" fill="#FFFFFF" fill-opacity="0.24"/>
+  </g>
+
+  <g>
+    <rect x="925" y="130" width="130" height="56" rx="20" fill="#FFFFFF" fill-opacity="0.18" stroke="#FFFFFF" stroke-opacity="0.28"/>
+    <circle cx="955" cy="158" r="7" fill="#F6D5C7"/>
+    <rect x="972" y="151" width="58" height="14" rx="7" fill="#FFFFFF" fill-opacity="0.72"/>
+  </g>
+
+  <g>
+    <rect x="154" y="648" width="126" height="108" rx="22" fill="#FFFFFF" fill-opacity="0.16" stroke="#FFFFFF" stroke-opacity="0.26"/>
+    <rect x="178" y="678" width="76" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.68"/>
+    <rect x="198" y="700" width="38" height="26" rx="10" fill="#FFFFFF" fill-opacity="0.86"/>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'badge' => 'FAQ',
+    'title' => 'Questions Fréquemment Posées',
+    'subtitle' => 'Tout ce que vous pourriez avoir besoin de savoir avant de commencer votre parcours d\'apprentissage avec nous.',
+    'search_label' => 'Rechercher dans les FAQ',
+    'search_placeholder' => 'Tapez un mot-clé comme certificat, progression ou leçons...',
+    'search_hint' => 'Recherchez par contenu de question ou de réponse.',
+    'q1' => 'La plateforme convient-elle aux débutants ?',
+    'a1' => 'Oui. Les parcours d\'apprentissage sont d\'abord structurés pour les débutants, puis évoluent progressivement vers des niveaux plus avancés.',
+    'q2' => 'Est-ce que je reçois un certificat après avoir terminé un cours ?',
+    'a2' => 'Oui. Les certificats sont délivrés après avoir rempli les exigences du cours et réussi les évaluations requises.',
+    'q3' => 'Puis-je suivre ma progression ?',
+    'a3' => 'Oui. Votre tableau de bord montre les leçons terminées, le pourcentage de progression du cours et les certificats obtenus.',
+    'q4' => 'Puis-je accéder aux leçons depuis des appareils mobiles ?',
+    'a4' => 'Oui. La plateforme est réactive et fonctionne sur mobile, tablette et ordinateur de bureau.',
+    'q5' => 'Comment puis-je contacter le support si j\'ai besoin d\'aide ?',
+    'a5' => 'Vous pouvez nous joindre via la page de contact et notre équipe vous répondra dès que possible.',
+    'no_results_title' => 'Aucune réponse correspondante trouvée',
+    'no_results_text' => 'Si vous n\'avez pas trouvé votre question, contactez-nous et nous vous aiderons directement.',
+    'need_help_title' => 'Vous avez encore des questions ?',
+    'need_help_text' => 'Notre équipe est là pour vous soutenir avant et pendant votre parcours d\'apprentissage.',
+    'contact_cta' => 'Contactez-nous',
+    'start_cta' => 'Commencer à apprendre',
+];

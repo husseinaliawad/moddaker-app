@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'badge' => 'FAQ',
+    'title' => 'Pertanyaan yang Sering Diajukan',
+    'subtitle' => 'Segala hal yang mungkin perlu Anda ketahui sebelum memulai perjalanan belajar bersama kami.',
+    'search_label' => 'Cari di FAQ',
+    'search_placeholder' => 'Ketik kata kunci seperti sertifikat, kemajuan, atau pelajaran...',
+    'search_hint' => 'Cari berdasarkan konten pertanyaan atau jawaban.',
+    'q1' => 'Apakah platform ini cocok untuk pemula?',
+    'a1' => 'Ya. Jalur pembelajaran disusun untuk pemula terlebih dahulu, kemudian secara bertahap menuju tingkat yang lebih dalam.',
+    'q2' => 'Apakah saya mendapatkan sertifikat setelah menyelesaikan kursus?',
+    'a2' => 'Ya. Sertifikat akan diterbitkan setelah menyelesaikan persyaratan kursus dan lulus evaluasi yang diperlukan.',
+    'q3' => 'Bisakah saya melacak kemajuan saya?',
+    'a3' => 'Ya. Dasbor Anda menunjukkan pelajaran yang telah diselesaikan, persentase kemajuan kursus, dan sertifikat yang diperoleh.',
+    'q4' => 'Bisakah saya mengakses pelajaran dari perangkat seluler?',
+    'a4' => 'Ya. Platform ini responsif dan bekerja di ponsel, tablet, dan desktop.',
+    'q5' => 'Bagaimana saya bisa menghubungi dukungan jika saya membutuhkan bantuan?',
+    'a5' => 'Anda dapat menghubungi kami melalui halaman kontak dan tim kami akan merespons secepat mungkin.',
+    'no_results_title' => 'Tidak ada jawaban yang sesuai ditemukan',
+    'no_results_text' => 'Jika Anda tidak menemukan pertanyaan Anda, hubungi kami dan kami akan membantu Anda secara langsung.',
+    'need_help_title' => 'Masih Punya Pertanyaan?',
+    'need_help_text' => 'Tim kami siap mendukung Anda sebelum dan selama perjalanan pembelajaran Anda.',
+    'contact_cta' => 'Hubungi Kami',
+    'start_cta' => 'Mulai Belajar',
+];

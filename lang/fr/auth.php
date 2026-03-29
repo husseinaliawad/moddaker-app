@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'login' => 'Connexion',
+    'logout' => 'Déconnexion',
+    'register' => 'S\'inscrire',
+    'password' => 'Mot de passe',
+    'confirm_password' => 'Confirmer le mot de passe',
+    'email' => 'E-mail',
+    'remember_me' => 'Se souvenir de moi',
+    'forgot_password' => 'Mot de passe oublié ?',
+    'login_subtitle' => 'Connectez-vous pour poursuivre votre parcours d’apprentissage du Quran.',
+    'login_hook_title' => 'Commencez votre parcours pour comprendre le Quran.',
+    'login_hook_description' => 'Accédez à vos cours, suivez votre progression et continuez à apprendre avec des étapes claires.',
+    'login_hook_point_courses' => 'Cours et leçons structurés en un seul endroit',
+    'login_hook_point_progress' => 'Suivez votre progression leçon par leçon',
+    'login_hook_point_certificate' => 'Obtenez un certificat à la fin du cours',
+    'register_subtitle' => 'Créez votre compte et commencez à apprendre dès aujourd’hui.',
+    'register_hook_title' => 'Commencez votre parcours vers la compréhension du Quran.',
+    'register_hook_description' => 'Inscrivez-vous en quelques minutes pour accéder aux cours, suivre votre progression et obtenir un certificat.',
+    'register_hook_point_courses' => 'Apprenez avec une méthode claire et simplifiée',
+    'register_hook_point_progress' => 'Suivez votre progression étape par étape',
+    'register_hook_point_certificate' => 'Obtenez un certificat à la fin',
+    'register_terms_notice' => 'En créant un compte, vous acceptez les Conditions et la Politique de confidentialité.',
+    'already_registered' => 'Vous avez déjà un compte ?',
+];

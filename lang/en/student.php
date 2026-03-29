@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'portal' => 'Student Portal',
+    'dashboard' => 'Student Dashboard',
+    'my_courses' => 'My Courses',
+    'progress' => 'My Progress',
+    'certificates' => 'My Certificates',
+    'profile' => 'Profile',
+    'enrolled_courses' => 'Enrolled Courses',
+    'completed_courses' => 'Completed Courses',
+    'average_progress' => 'Average Progress',
+    'current_courses' => 'Current Courses',
+    'recent_lessons' => 'Recently Completed Lessons',
+    'no_enrollments' => 'No enrolled courses yet.',
+    'no_progress' => 'No progress data yet.',
+    'continue_learning' => 'Continue Learning',
+    'progress_value' => ':value% progress',
+    'completed_lessons_count' => 'Completed lessons: :count',
+    'no_certificates' => 'No certificates yet.',
+    'serial_number' => 'Serial Number',
+    'issued_at' => 'Issued At',
+    'download_certificate' => 'Download Certificate',
+    'name' => 'Name',
+    'phone' => 'Phone',
+    'language' => 'Language',
+    'bio' => 'Bio',
+    'avatar' => 'Avatar',
+    'save_profile' => 'Save Changes',
+];
+

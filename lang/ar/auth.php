@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'login' => 'تسجيل الدخول',
+    'logout' => 'تسجيل الخروج',
+    'register' => 'إنشاء حساب',
+    'password' => 'كلمة المرور',
+    'confirm_password' => 'تأكيد كلمة المرور',
+    'email' => 'البريد الإلكتروني',
+    'remember_me' => 'تذكرني',
+    'forgot_password' => 'نسيت كلمة المرور؟',
+    'login_subtitle' => 'سجّل دخولك لمتابعة رحلتك في تعلم القرآن',
+    'login_hook_title' => 'ابدأ رحلتك في فهم القرآن الكريم',
+    'login_hook_description' => 'ادخل إلى دوراتك، تابع تقدمك، وواصل التعلم بخطوات واضحة ومنظمة.',
+    'login_hook_point_courses' => 'دورات ودروس منظمة في مكان واحد',
+    'login_hook_point_progress' => 'متابعة تقدمك درسًا بعد درس',
+    'login_hook_point_certificate' => 'عند إكمال الدورة تحصل على شهادة',
+    'register_subtitle' => 'أنشئ حسابك وابدأ التعلم اليوم',
+    'register_hook_title' => 'ابدأ رحلتك في فهم القرآن الكريم',
+    'register_hook_description' => 'سجّل مجانًا للوصول إلى الدورات، متابعة التقدم، والحصول على شهادة إتمام.',
+    'register_hook_point_courses' => 'تعلم بأسلوب مبسط ومنظم',
+    'register_hook_point_progress' => 'تابع تقدمك خطوة بخطوة',
+    'register_hook_point_certificate' => 'احصل على شهادة عند الإكمال',
+    'register_terms_notice' => 'بإنشاء حساب، أنت توافق على الشروط وسياسة الخصوصية.',
+    'already_registered' => 'هل لديك حساب بالفعل؟',
+];

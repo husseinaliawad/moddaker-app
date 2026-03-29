@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'portal' => 'بوابة الطالب',
+    'dashboard' => 'لوحة الطالب',
+    'my_courses' => 'دوراتي',
+    'progress' => 'تقدمي',
+    'certificates' => 'شهاداتي',
+    'profile' => 'الملف الشخصي',
+    'enrolled_courses' => 'الدورات المسجل بها',
+    'completed_courses' => 'الدورات المكتملة',
+    'average_progress' => 'متوسط التقدم',
+    'current_courses' => 'الدورات الحالية',
+    'recent_lessons' => 'آخر الدروس المكتملة',
+    'no_enrollments' => 'لا توجد دورات مسجل بها حتى الآن.',
+    'no_progress' => 'لا يوجد تقدم مسجل بعد.',
+    'continue_learning' => 'متابعة التعلم',
+    'progress_value' => ':value٪ إنجاز',
+    'completed_lessons_count' => 'عدد الدروس المكتملة: :count',
+    'no_certificates' => 'لا توجد شهادات حتى الآن.',
+    'serial_number' => 'رقم الشهادة',
+    'issued_at' => 'تاريخ الإصدار',
+    'download_certificate' => 'تحميل الشهادة',
+    'name' => 'الاسم',
+    'phone' => 'الهاتف',
+    'language' => 'اللغة',
+    'bio' => 'نبذة',
+    'avatar' => 'الصورة الشخصية',
+    'save_profile' => 'حفظ التغييرات',
+];
+

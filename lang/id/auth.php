@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'login' => 'Masuk',
+    'logout' => 'Keluar',
+    'register' => 'Daftar',
+    'password' => 'Kata Sandi',
+    'confirm_password' => 'Konfirmasi Kata Sandi',
+    'email' => 'Email',
+    'remember_me' => 'Ingat saya',
+    'forgot_password' => 'Lupa kata sandi?',
+    'login_subtitle' => 'Masuk untuk melanjutkan perjalanan belajar Quran Anda.',
+    'login_hook_title' => 'Mulai perjalanan memahami Quran.',
+    'login_hook_description' => 'Akses kursus Anda, pantau progres, dan terus belajar dengan langkah yang jelas.',
+    'login_hook_point_courses' => 'Kursus dan pelajaran terstruktur di satu tempat',
+    'login_hook_point_progress' => 'Pantau progres Anda pelajaran demi pelajaran',
+    'login_hook_point_certificate' => 'Dapatkan sertifikat saat kursus selesai',
+    'register_subtitle' => 'Buat akun Anda dan mulai belajar hari ini.',
+    'register_hook_title' => 'Mulai perjalanan memahami Quran sekarang.',
+    'register_hook_description' => 'Daftar dalam beberapa menit untuk mengakses kursus, memantau progres, dan meraih sertifikat.',
+    'register_hook_point_courses' => 'Belajar dengan metode yang jelas dan sederhana',
+    'register_hook_point_progress' => 'Pantau progres Anda langkah demi langkah',
+    'register_hook_point_certificate' => 'Raih sertifikat saat Anda selesai',
+    'register_terms_notice' => 'Dengan membuat akun, Anda menyetujui Syarat dan Kebijakan Privasi.',
+    'already_registered' => 'Sudah punya akun?',
+];

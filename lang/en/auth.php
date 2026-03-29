@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'login' => 'Login',
+    'logout' => 'Logout',
+    'register' => 'Register',
+    'password' => 'Password',
+    'confirm_password' => 'Confirm Password',
+    'email' => 'Email',
+    'remember_me' => 'Remember me',
+    'forgot_password' => 'Forgot your password?',
+    'login_subtitle' => 'Sign in to continue your Quran learning journey.',
+    'login_hook_title' => 'Start your journey toward understanding Quran.',
+    'login_hook_description' => 'Access your courses, track your progress, and keep learning with clear guided steps.',
+    'login_hook_point_courses' => 'Structured courses and lessons in one place',
+    'login_hook_point_progress' => 'Track your progress lesson by lesson',
+    'login_hook_point_certificate' => 'Get a certificate when you complete your course',
+    'register_subtitle' => 'Create your account and start learning today.',
+    'register_hook_title' => 'Begin your journey to understand the Quran.',
+    'register_hook_description' => 'Sign up in minutes to access courses, track progress, and earn a certificate.',
+    'register_hook_point_courses' => 'Learn with a clear and simplified method',
+    'register_hook_point_progress' => 'Follow your progress step by step',
+    'register_hook_point_certificate' => 'Earn a certificate when you finish',
+    'register_terms_notice' => 'By creating an account, you agree to the Terms and Privacy Policy.',
+    'already_registered' => 'Already have an account?',
+];
