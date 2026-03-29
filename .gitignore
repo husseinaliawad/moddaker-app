@@ -15,6 +15,9 @@
 /.zencoder
 /.zenflow
 /.ftp-deploy-sync-state.json
+/deploy-dist
+/deploy-dist.tmp
+/deploy-dist.old
 /auth.json
 /node_modules
 /public/build

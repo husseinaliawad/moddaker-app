@@ -17,6 +17,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Prepare cPanel deploy bundle
+        run: |
+          chmod +x scripts/prepare-cpanel-deploy.sh
+          ./scripts/prepare-cpanel-deploy.sh
+
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -25,6 +30,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           port: 21
+          local-dir: ./deploy-dist/
           server-dir: /public_html/
           dangerous-clean-slate: false
           exclude: |
